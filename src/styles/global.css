@@ -5,24 +5,45 @@
 
       /* polices */
 
-    --font-Oxanium: "Oxanium", sans-serif;
-    --font-Teko: "teko", sans-serif;
-    --font-Pragati-Narrow: "Pragati Narrow", sans-serif;
-    --font-Platypin: "Platypin", sans-serif;
-    --font-Pridi: "Pridi", sans-serif;
-    --font-Cinzel6Decorative: "Cinzel Decorative", sans-serif;
+    --font-oxanium: "Oxanium", sans-serif;
+    --font-teko: "Teko", sans-serif;
+    --font-pragati-narrow: "Pragati Narrow", sans-serif;
+    --font-platypi: "Platypi", sans-serif;
+    --font-pridi: "Pridi", sans-serif;
+    --font-cinzel-decorative: "Cinzel Decorative", sans-serif;
 
     /* Couleurs */
-    
-      --color-btn-menu : #463F32;
-      --color-text1 : #000000;
-      --color-text2 : #FFFFFF;
-      --color-header : #83A697;
-      --color-btn-border-start : #723E64;
-      --color-btn-start : #78596D;
-      --color-background : #E8ECE9;
-      --color-text3 : #F2A81F;
-      --color-btn-border : #ED8E3A;
-      --color-btn-border-tag : #560E00;
-      --color-btn-tag : #AE4A34;
+    --color-btn-menu : #463F32;
+    --color-text1 : #000000;
+    --color-text2 : #FFFFFF;
+    --color-header : #83A697;
+    --color-btn-border-start : #723E64;
+    --color-btn-start : #78596D;
+    --color-background : #E8ECE9;
+    --color-text3 : #F2A81F;
+    --color-btn-border : #ED8E3A;
+    --color-btn-border-tag : #560E00;
+    --color-btn-tag : #AE4A34;
+    --color-btn-debloquer : #DCB470;
+    --color-btn-border-debloquer : #ED8E3A;
+
+    /* Taille */
+
+  --text-btn-menu: 1.5rem;         /* 24px au lieu de 36px */
+  --text-h1: 4.375rem;             /* 70px au lieu de 80px */
+  --text-gros: 2.5rem;              /* 40px au lieu de 48px */
+  --text-h2: 3rem;                  /* 48px au lieu de 62px */
+  --text-sous-intro: 1.75rem;       /* 28px au lieu de 35px */
+  --text-semi: 2.5rem;                /* 40px au lieu de 60px */
+  --text-titre-card: 1.5rem;        /* 24px au lieu de 30px */
+  --text-body: 0.9375rem;           /* 15px */
+  --text-btn: 1.125rem;             /* 18px au lieu de 20px */
+  --text-formulaire: 1.5rem;        /* 24px au lieu de 32px */
+  --text-btn-formulaire: 1.375rem;  /* 22px au lieu de 30px */
+  --text-contact-footer: 2.5rem;    /* 40px au lieu de 60px */
+  --text-mail: 1.125rem;            /* 18px au lieu de 20px */
+  --text-menu-footer: 1.5rem;       /* 24px au lieu de 32px */
+  --text-titre: 2rem;               /* 32px au lieu de 40px */
+  --text-catégorie: 3rem;            /* 48px au lieu de 64px */
+  --text-explication: 1.25rem;      /* 20px au lieu de 24px */
 }
