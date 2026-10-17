@@ -1,2 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui" ; 
+
+@theme {
+
+      /* polices */
+
+    --font-Oxanium: "Oxanium", sans-serif;
+    --font-Teko: "teko", sans-serif;
+    --font-Pragati-Narrow: "Pragati Narrow", sans-serif;
+    --font-Platypin: "Platypin", sans-serif;
+    --font-Pridi: "Pridi", sans-serif;
+    --font-Cinzel6Decorative: "Cinzel Decorative", sans-serif;
+
+    /* Couleurs */
+    
+      --color-btn-menu : #463F32;
+      --color-text1 : #000000;
+      --color-text2 : #FFFFFF;
+      --color-header : #83A697;
+      --color-btn-border-start : #723E64;
+      --color-btn-start : #78596D;
+      --color-background : #E8ECE9;
+      --color-text3 : #F2A81F;
+      --color-btn-border : #ED8E3A;
+      --color-btn-border-tag : #560E00;
+      --color-btn-tag : #AE4A34;
+}
