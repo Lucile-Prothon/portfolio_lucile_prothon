@@ -1,0 +1,38 @@
+--- 
+import "../styles/global.css";
+import {Image} from "astro:assets";
+import Linkedin from "../assets/icons/linkedin.svg";
+import Cailloupapillon from "../assets/img/cailloupapillon.svg";
+
+
+---
+
+<footer class="grid grid-cols-1 gap-y-8 bg-header p-6 md:grid-cols-[minmax(0,60%)_max-content_minmax(0,1fr)] md:items-end md:gap-x-4 md:py-0 md:pl-12 md:pr-4">
+<div class="m-4 mb-4 flex flex-col items-start gap-y-4 pt-2 md:pt-7">
+<p class="text-text1 font-teko text-semi">Contact</p>
+<a
+  href="https://www.gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-text1 font-platypi text-formulaire underline hover:opacity-75 transition">lucileprothon@gmail.com</a>
+<a href="https://www.linkedin.com/in/lucile-prothon-63a26b26b/?isSelfProfile=true"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Voir mon profil LinkedIn"><Linkedin class="h-10 w-10 text-black" />
+</a>
+</div>
+<div class="mb-4 flex items-end gap-x-10">
+<nav class="text-text1 font-pragati-narrow text-formulaire">
+    <ul>
+        <li><a href="/profil">Profil</a></li>
+        <li><a href="/realisation">Réalisation</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/credit">Crédit</a></li>
+    </ul>
+</nav>
+</div>
+<Image 
+    src={Cailloupapillon} 
+    alt="Illustration d'un caillou et d'un papillon"
+    class="h-auto w-[125px] object-contain md:h-[210px] md:w-auto md:max-w-none md:justify-self-end" />
+</footer>
