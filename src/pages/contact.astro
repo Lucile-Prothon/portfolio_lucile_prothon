@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {Image} from "astro:assets";
+import Livre from "../assets/img/livre.svg";
+---
+
+<Layout>
+    <main class="bg-background px-6 pb-12 pt-14 text-center">
+        <h1 class="text-h2 font-pragati-narrow text-text1 leading-tight">Entrez en profondeur...</h1>
+        <p class="text-sous-intro text-text1 leading-snug">Une envie, un projet ? Ecrivez moi afin d’en dicuter !</p>
+    </main>
+    <section class="bg-background px-4 pb-12 sm:px-6">
+        <div class="relative mx-auto grid w-full max-w-[1000px] grid-cols-1 gap-8 rounded-lg bg-btn-debloquer p-8 sm:grid-cols-2 md:aspect-[1343/847] md:gap-0 md:rounded-none md:bg-transparent md:p-0">
+            <Image
+                src={Livre}
+                alt="Livre ouvert servant de support à la page de contact"
+                class="absolute inset-0 hidden h-full w-full object-fill md:block"
+            />
+            <div class="z-10 flex flex-col items-center justify-between text-center sm:col-span-1">
+                <h2 class="font-pridi text-gros font-bold text-text1 mt-15">CONTACT</h2>
+                <p class="-translate-y-4 font-pridi text-formulaire font-bold text-text1 mb-25">XX - XX - XXX</p>
+            </div>
+            <form
+                class="z-10 flex flex-col gap-2 font-pridi text-formulaire text-text1 sm:col-span-1 md:absolute md:left-[59%] md:top-[12%] md:w-[31%]"
+                action="mailto:lucileprothon@gmail.com?subject=Contact%20depuis%20le%20portfolio"
+                method="post"
+                enctype="text/plain"
+            >
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    name="Email"
+                    type="email"
+                    required
+                    class="h-10 w-full rounded-sm border-5 border-border-formulaire bg-btn-formulaire px-2 text-body"
+                />
+                <label for="subject" class="mt-1">Sujet</label>
+                <input
+                    id="subject"
+                    name="Sujet"
+                    type="text"
+                    required
+                    class="h-10 w-full rounded-sm border-5 border-border-formulaire bg-btn-formulaire px-2 text-body"
+                />
+                <label for="message" class="mt-1">Message</label>
+                <textarea
+                    id="message"
+                    name="Message"
+                    required
+                    class="h-28 w-full resize-y border-5 border-border-formulaire bg-btn-formulaire p-2 text-body"
+                ></textarea>
+                <button
+                    type="submit"
+                    class="mt-2 self-end bg-border-formulaire border-5 border-border-formulaire px-2 font-oxanium text-btn-formulaire leading-tight text-text2"
+                >
+                    Envoyer
+                </button>
+            </form>
+        </div>
+    </section>
+</Layout>
