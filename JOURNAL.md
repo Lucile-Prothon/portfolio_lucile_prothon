@@ -5,3 +5,7 @@ J'ai réalisé la page d'accueil, que se soit le html ou la mise en forme cela e
 # Semaine 2
 
 J'ai réalisé le reste de mon footer, mais également la page de contact. Les liens fonctionnes et il me reste à tester le formulaire en installant une application de mail. J'ai également changés quelques variables manquantes ou qui ne me convenait plus. J'ai également conversé un peu avec l'ia afin de comprendre comment faire mon formulaire de contact, et quel était la meilleure solution entre un renvoie de lien et le mailto. 
+
+# Semaine 3
+
+J'ai réalisé la page du profil, l'ia m'a aidé à faire et comprendre où placer mes fichiers et éléments pour cette page. Elle m'a notament fait en sorte que le bouton pour télécharger mon cv soit fonctionnel. 
