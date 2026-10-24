@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="800 1650 1450 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path id="Pieds" d="M1276.212,2541.377L1737.793,2534.735L1780.962,2863.487C1804.783,2979.298 1778.542,3038.792 1707.906,3048.34C1594.264,3094.593 1486.156,3083 1370.3,3062.73C1324.853,3061.983 1284.39,3033.97 1250.754,3000.743C1234.236,2982.057 1228.529,2948.957 1229.722,2906.656L1276.212,2541.377Z" style="fill:rgb(194,160,131);"/>
+    <g id="Chapeau-" serif:id="Chapeau " transform="matrix(1.090783,0,0,1.264886,-148.972958,-386.306473)">
+        <path d="M1996.478,2322.956L1031.536,2322.956C962.809,2261.331 925.963,2188.026 925.963,2112.916C925.963,1910.144 1189.457,1745.518 1514.007,1745.518C1838.558,1745.518 2102.051,1910.144 2102.051,2112.916C2102.051,2188.026 2065.206,2261.331 1996.478,2322.956Z" style="fill:rgb(227,24,0);"/>
+    </g>
+    <g id="Tache-blance" serif:id="Tache blance" transform="matrix(1.790877,0.31392,-0.222327,1.268349,-476.262166,-832.060993)">
+        <ellipse cx="1101.079" cy="2177.954" rx="47.562" ry="101.611" style="fill:rgb(240,240,241);"/>
+    </g>
+    <g id="Tache-blance1" serif:id="Tache blance" transform="matrix(1.933082,1.289717,-0.835177,1.251799,327.144534,-2050.087511)">
+        <ellipse cx="1310.786" cy="1943.385" rx="43.239" ry="83.234" style="fill:rgb(240,240,241);"/>
+    </g>
+    <g id="Tache-blance2" serif:id="Tache blance" transform="matrix(1.431081,0,0,2.000555,-696.672543,-2274.707321)">
+        <ellipse cx="1536.707" cy="2305.507" rx="145.93" ry="71.344" style="fill:rgb(240,240,240);"/>
+    </g>
+    <g id="Tache-blance3" serif:id="Tache blance" transform="matrix(2.163571,1.109914,-1.066895,2.079713,257.287403,-3835.61075)">
+        <ellipse cx="1561.029" cy="1998.514" rx="24.322" ry="28.105" style="fill:rgb(240,240,241);"/>
+    </g>
+    <g id="Tache-blance4" serif:id="Tache blance" transform="matrix(1.124856,0.510319,-0.413146,0.910665,579.871422,-572.44186)">
+        <ellipse cx="1736.686" cy="1886.634" rx="103.773" ry="56.751" style="fill:rgb(255,240,240);"/>
+    </g>
+    <g id="Tache-blance5" serif:id="Tache blance" transform="matrix(0.075307,-1.618274,1.47074,0.068442,-1224.90292,5023.116376)">
+        <ellipse cx="1865.32" cy="2070.938" rx="24.862" ry="44.32" style="fill:rgb(240,240,241);"/>
+    </g>
+    <g id="Tache-blance6" serif:id="Tache blance" transform="matrix(1.14272,-0.912905,0.79324,0.99293,-2165.805487,1803.885024)">
+        <ellipse cx="1942.069" cy="2323.051" rx="51.886" ry="88.887" style="fill:rgb(240,240,240);"/>
+    </g>
+</svg>

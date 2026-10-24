@@ -1,0 +1,140 @@
+
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Champi_rouge from "../assets/img/champi_rouge.svg";
+import Avatar2 from "../assets/img/avatar2.svg";
+import Stat1 from "../assets/icons/stat1.svg";
+import Stat2 from "../assets/icons/stat2.svg";
+import Stat3 from "../assets/icons/stat3.svg";
+import Stat4 from "../assets/icons/stat4.svg";
+import Stat5 from "../assets/icons/stat5.svg";
+import Bougie from "../assets/img/bougie.svg";
+import Trefle from "../assets/img/trefle.svg";
+import Ampoule from "../assets/img/ampoule.svg";
+import Telechargement from "../assets/icons/telechargement.svg"
+---
+
+<Layout>
+  <div class="relative flex min-h-[clamp(210px,30vh,240px)] flex-col items-center bg-header px-4 pt-4 text-text1">
+    <h1 class="text-center font-teko text-h1 leading-tight">Profil</h1>
+    <Image
+      src={Champi_rouge}
+      alt="Illustration d'un champignon rouge"
+      class="absolute right-7 bottom-3 h-auto w-[clamp(110px,16vw,140px)]"
+    />
+  </div>
+
+  <div class="bg-background px-6 pb-12 pt-8 text-text1">
+    <h2 class="text-center font-pragati-narrow text-h2 leading-tight">
+      Une mise en abime
+    </h2>
+    <p class="mt-2 text-center font-platypi text-sous-intro leading-snug">
+      En apprendre plus sur votre personnage est essentiel
+    </p>
+
+    <section class="mx-auto mt-14 w-full max-w-[1100px] rounded-[32px] border-5 border-fiche-profil p-6 md:p-8">
+      <div class="grid grid-cols-1 gap-6 pl-[58px] md:grid-cols-[138px_minmax(0,1fr)] md:gap-x-12">
+        <Image
+          src={Avatar2}
+          alt="Avatar type réseaux sociaux"
+          width={138}
+          height={148}
+          class="h-[148px] w-[138px] object-contain md:mx-0"
+        />
+
+        <div>
+          <h3 class="mb-4 text-center font-pridi text-titre-card leading-tight md:text-left">
+            FICHE PERSONNAGE
+          </h3>
+          <div class="space-y-3 text-center font-platypi text-body leading-snug md:text-left">
+            <p>Identification : Lucile Prothon</p>
+            <p>Statut : Étudiante</p>
+            <p>Études : 2e année de BUT Métiers du multimédia et de l'internet</p>
+            <p>Disponibilité : <strong>Alternance, stage</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-8 pl-[58px] md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-x-[343px]">
+        <section>
+          <h3 class="mb-3 text-center font-pridi text-titre-card leading-tight md:text-left">
+            Compétences
+          </h3>
+
+          <ul class="grid w-fit grid-cols-[max-content_265px] items-center gap-x-3 gap-y-2 font-platypi text-body">
+            <li class="contents">
+              <span class="whitespace-nowrap">Gestion de communauté</span>
+              <Stat1 aria-hidden="true" class="h-auto w-full" />
+            </li>
+            <li class="contents">
+              <span class="whitespace-nowrap">Développement web</span>
+              <Stat2 aria-hidden="true" class="h-auto w-full" />
+            </li>
+            <li class="contents">
+              <span class="whitespace-nowrap">Montage vidéo</span>
+              <Stat3 aria-hidden="true" class="h-auto w-full" />
+            </li>
+            <li class="contents">
+              <span class="whitespace-nowrap">Création graphique</span>
+              <Stat4 aria-hidden="true" class="h-auto w-full" />
+            </li>
+            <li class="contents">
+              <span class="whitespace-nowrap">Rédaction</span>
+              <Stat5 aria-hidden="true" class="h-auto w-full" />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="mb-3 text-center font-pridi text-titre-card leading-tight md:text-left">
+            Outils
+          </h3>
+
+          <ul class="space-y-2 font-platypi text-body">
+            <li>Figma, Affinity</li>
+            <li>HTML, CSS, Astro, Tailwind</li>
+            <li>Discord, TikTok, Instagram</li>
+            <li>CapCut, DaVinci Resolve</li>
+            <li>PocketBase</li>
+            <li>WordPress</li>
+            <li>Jira</li>
+          </ul>
+        </section>
+      </div>
+		<section class="mt-8 grid grid-cols-[46px_minmax(0,1fr)] items-start gap-x-3">
+        <Image
+          src={Bougie}
+          alt="Illustration d'une bougie allumée"
+          width={46}
+          height={75}
+          class="row-span-2 object-contain"/>
+		<h3 class="mb-3 text-center font-pridi text-[25px] font-bold leading-tight md:text-left">Qui suis-je ? </h3>
+		<p class="space-y-3 text-center font-platypi text-body leading-snug md:text-left">Étudiante en deuxième année d’un BUT Métiers du Multimédia et de l’Internet (MMI), je recherche une alternance en communication. J’ai pu développer de nombreuses compétences en autodidacte comme au cours de ma formation. J’aime imaginer et donner vie à des univers. Produire du contenu en ligne ne me fait pas peur, bien au contraire. Je gère de nombreuses communautés en ligne, notamment sur Discord, pour lesquelles je suis amenée à communiquer vis-à-vis de mon rôle de staff. Je suis d’une nature curieuse, j’apprécie découvrir de nouvelles choses, que ce soit pour ma culture ou à but de m’en servir.</p>
+		</section>
+		<section class="mt-8 grid grid-cols-[46px_minmax(0,1fr)] items-start gap-x-3">
+		<Image
+          src={Trefle}
+          alt="Illustration d'un trèfle inspiré du jeu vidéo One shot"
+          width={46}
+          height={75}
+          class="row-span-2 object-contain"
+        />
+		<h3 class="mb-3 text-center font-pridi text-[25px] font-bold leading-tight md:text-left">Mon parcours </h3>
+		<p class="space-y-3 text-center font-platypi text-body leading-snug md:text-left">Je possède un bac STMG avec l’option Systèmes d’Information de Gestion (SIG) qui m’a par la suite confirmé mon choix de poursuite d’études dans ma formation actuelle. Ce qui m’a donné envie de la rejoindre est la diversité et la polyvalence qu’elle offre. En effet, nous obtenons des compétences en communication, en design mais également en développement web. Elle répondait parfaitement à mon envie de travailler dans le milieu du numérique et, plus récemment, d’évoluer dans le domaine de la communication.</p>
+	  </section>
+	<section class="mt-8 grid grid-cols-[46px_minmax(0,1fr)] items-start gap-x-3">
+        <Image
+          src={Ampoule}
+          alt="Illustration d'une ampoule inspiré du jeu vidéo One shot"
+          width={46}
+          height={75}
+          class="row-span-2 object-contain"
+        />
+		<h3 class="mb-3 text-center font-pridi text-[25px] font-bold leading-tight md:text-left">Mes centres d’interêts ?</h3>
+		<p class="space-y-3 text-center font-platypi text-body leading-snug md:text-left">Discord est une plateforme qui me passionne, tant par son fonctionnement que son utilisation. Au fil des ans, j’ai su créer divers serveurs, univers et communautés. Cet attrait plus que prononcé pour cette application m’a notamment fait découvrir le roleplay (rp), qui consiste à créer et donner vie à des personnages fictifs dans des histoires que nous écrivons. Cette pratique a pu m’aider vis-à-vis de ma manière de parler, à savoir facilement m’adapter à mon interlocuteur et à me mettre à la place d’une personne pouvant lire ce que j’écrivais. Les jeux vidéo, la lecture et la musique sont également des activités que j’apprécie faire, mais ce que j’aime par-dessus tout, c’est effectuer mon rôle de staff dans les différents projets que je gère sur Discord, cela passe par la sécurisation, la création de ces serveurs mais aussi l’écriture d’annonces pour informer de divers événements ou simplement discuter avec les membres. Comme dit précédemment, j’aime mettre en place mes idées et créer ce que je peux par la suite. J’aime également créer de petits montages vidéo que je publie sur Instagram.</p>
+	  </section>
+	  	<a href="/cv_lucile_prothon.pdf" download="cv_lucile_prothon.pdf" class="ml-auto mt-10 flex w-fit items-center justify-center gap-2 font-oxanium text-btn text-text1">
+			<Telechargement aria-hidden="true" class=" shrink-0" />Télécharger mon cv</a>
+    </section>
+  </div>
+</Layout>
