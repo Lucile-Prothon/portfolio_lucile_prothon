@@ -8,4 +8,4 @@ J'ai réalisé le reste de mon footer, mais également la page de contact. Les l
 
 # Semaine 3
 
-J'ai réalisé la page du profil, l'ia m'a aidé à faire et comprendre où placer mes fichiers et éléments pour cette page. Elle m'a notament fait en sorte que le bouton pour télécharger mon cv soit fonctionnel. 
+J'ai réalisé la page du profil, l'ia m'a aidé à faire et comprendre où placer mes fichiers et éléments pour cette page. Elle m'a notament fait en sorte que le bouton pour télécharger mon cv soit fonctionnel. J'ai également réalisé ma page de crédit, réutilisant du code produit pour la page de contact tout en modifiant certains éléments à l'aide de l'ia intégré à VS code.
