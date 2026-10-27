@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Boussoleloupe from "../assets/img/boussoleloupe.svg";
+import FleurCarte from "../assets/img/fleur-carte.png";
+
+const projetsCommunication = [
+	{ numero: "01", titre: "Tiktok promotionnel", filtre: "none" },
+	{ numero: "02", titre: "Annonce discord", filtre: "hue-rotate(12deg)" },
+	{ numero: "03", titre: "Gestion de communauté", filtre: "hue-rotate(28deg)" },
+	{ numero: "04", titre: "Création fiche rp", filtre: "hue-rotate(-12deg) brightness(0.7)" },
+];
+---
+
+<Layout>
+	<div class="relative flex min-h-[clamp(250px,40vh,390px)] items-center bg-header px-4 text-text1">
+		<h1 class="absolute right-3 left-2 text-center font-teko text-h1 leading-tight">Réalisation</h1>
+		<Image
+			src={Boussoleloupe}
+			alt="Illustration d'une boussole et d'une loupe"
+			class="absolute right-[7%] top-1/2 h-auto w-[clamp(120px,20vw,240px)] -translate-y-1/2"
+		/>
+	</div>
+
+	<main class="bg-background px-6 pb-12 pt-[clamp(4rem,8vw,7.5rem)] text-text1">
+		<header class="text-center">
+			<h2 class="font-pragati-narrow text-h2 leading-tight">Un monde merveilleux</h2>
+			<p class="mt-2 font-platypi text-sous-intro leading-snug">
+				Des réalisations que vous pourriez faire, ayant été réalisé lors de quêtes
+			</p>
+		</header>
+
+		<section class="mt-[clamp(6rem,12vw,11rem)]">
+			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
+				I. Communication
+			</h2>
+			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[80%] max-w-[1100px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+				{projetsCommunication.map((projet) => (
+					<article class="relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M34 1.5h281c17.949 0 32.5 14.55 32.5 32.5v230.115c0 17.95-14.551 32.5-32.5 32.5H34c-17.95 0-32.5-14.55-32.5-32.5V34C1.5 16.05 16.05 1.5 34 1.5z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+							<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
+						</svg>
+						<Image
+							src={FleurCarte}
+							alt=""
+							aria-hidden="true"
+							class="absolute left-[19%] top-[1%] h-[82%] w-[62%] object-contain"
+							style={`filter: ${projet.filtre}`}
+						/>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M21.223 152.91C9.833 153.046.646 163.842.586 177.158.432 212.184.146 276.765 0 310.266c-.051 11.859 8.081 21.553 18.223 21.72l300.928 4.985c8.162.136 17.559.073 23.149-6.88 5.591-6.951 6.863-20.154 6.245-29.671-1.929-29.679 1.668-69.404 0-95.067-.887-13.662-16.952-25.211-28.673-25.03-50.03.768-172.779 2.66-172.779 2.66-15.56-2.811-30.824-9.355-40.638-22.618-3.825-5.183-9.407-8.134-15.26-8.066-16.369-.022-48.713.36-69.972.611z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+						</svg>
+						<p class="absolute left-[5%] top-[48%] font-pridi text-titre-card font-bold leading-none">
+							{projet.numero}
+						</p>
+						<p class="absolute left-[8%] top-[74%] font-platypi text-body leading-tight">
+							{projet.titre}
+						</p>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<section class="mt-12">
+			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
+				II. Design graphique
+			</h2>
+		</section>
+		<section class="mt-12">
+			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
+				III. Développement web
+			</h2>
+		</section>
+	</main>
+</Layout>
