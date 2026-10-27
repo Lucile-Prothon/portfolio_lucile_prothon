@@ -9,3 +9,7 @@ J'ai réalisé le reste de mon footer, mais également la page de contact. Les l
 # Semaine 3
 
 J'ai réalisé la page du profil, l'ia m'a aidé à faire et comprendre où placer mes fichiers et éléments pour cette page. Elle m'a notament fait en sorte que le bouton pour télécharger mon cv soit fonctionnel. J'ai également réalisé ma page de crédit, réutilisant du code produit pour la page de contact tout en modifiant certains éléments à l'aide de l'ia intégré à VS code.
+
+# Semaine 4
+
+J'ai repéré une grosse erreur d'affichage sur ma page des crédits que j'ai tenté de réparer avec différentes ia pour comprendre le problèmes, que je n'avais visiblement pas vu la semaine dernière. J'ai également mis un effet 3D sur les card de l'index avec l alibraire Daisy UX. L'ia m'a expliqué et réglé le soucis qui faisait qu'avec les div vide mon bouton ne fonctionnait plus. La page 404 a également été mise en page et ajouté au projet. 

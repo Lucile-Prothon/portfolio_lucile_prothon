@@ -1,3 +1,5 @@
 **Chat gpt :** Il me sert lorsqe j'ai des questions concernant des parties de code que copilote peut me générer. Il m'a également servi à faire la transition entre les tailles en pixels en rem. Il m'a également aider à réduire certaines tailles qui me paraissait être trop grosse tel quel. 
 
 **Copilot :** Il m'a surtout aidé dans la mise en forme de certains éléments que je n'arrivais pas forcément à faire. J'ai retravaillé certaines choses qu'il me produisait comme lorsqu'au début il n'assemblait pas mes variantes a la mise en forme, ou quand ce qu'il faisait ne me convenait pas. Il m'a également corrigé certaines erreurs. Cette ia m'aide également à mettre en place mes grilles et à placer certains éléments lorsque j'ai du mal à le faire. 
+
+**builder.io :** Je m'en suis servi pour tester différentes manières de mettre en place l'animation de mes dossiers pour la page réalisation. Il réutilise directement ma maquette figma grâce à un plug in et m'a ainsi présenté une manière de réaliser cette animation.  
