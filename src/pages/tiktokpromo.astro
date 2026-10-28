@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Fleur from "../assets/img/fleur.svg";
+import Badge from "../assets/icons/badge.svg";
+import Tiktokpromo from "../assets/img/tiktokpromo.webp";
+---
+
+<Layout>
+	<div class="bg-header px-6 py-8 text-text1 sm:px-10 lg:px-16">
+		<div class="mx-auto max-w-7xl">
+			<h1 class="font-teko text-h1 leading-none">Tiktok promotionnel</h1>
+		</div>
+	</div>
+
+	<div class="bg-background px-6 pb-16 pt-10 text-text1 sm:px-10 lg:px-16 lg:pt-14">
+		<div class="mx-auto max-w-7xl">
+			<div class="mb-8 flex flex-wrap gap-3 sm:gap-5">
+				<button class="rounded-md border border-btn-border-tag bg-btn-tag px-4 py-1 font-oxanium text-btn text-text2">
+					En cours
+				</button>
+				<button class="rounded-md border border-btn-border-tag bg-btn-tag px-4 py-1 font-oxanium text-btn text-text2">
+					Personnel
+				</button>
+			</div>
+
+			<section class="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
+				<div class="flex flex-col">
+					<h2 class="mb-4 font-pridi text-explication font-bold">Explication</h2>
+					<div class="space-y-4 font-platypi text-body leading-relaxed">
+						<p>
+							J’ai participé à la création d’un serveur communautaire sur Discord du nom d’Hazel &amp; Moka avec une amie. En plus des traditionnelles demandes de partenariat et des échanges de publicité avec une mention plus ou moins importante, nous avons décidé d’effectuer également une mise en avant du serveur sur TikTok. Le logo du compte a été repris du logo du serveur afin que nos membres puissent nous reconnaitre facilement.
+						</p>
+						<p>
+							Nous suivons des tendances, créons nos propres concepts ou mettons en avant des événements, comme des journées importantes selon nous.
+						</p>
+						<p>
+							J’utilise donc Canva lorsqu’il s’agit de créer des slides, ou encore CapCut ou DaVinci Resolve lorsqu’il s’agit de montage vidéo pur. Nous essayons d’avoir au moins un post par semaine. Suite à une étude réalisée en ligne, mais également à nos propres constatations, nous publions généralement durant la pause du midi. Le but de ce projet est bien évidemment de prendre un premier contact avec les réseaux sociaux, ou du moins de le renforcer. Avec ce compte TikTok, nous voulons également attirer de nouveaux utilisateurs afin qu’ils rejoignent notre offre : notre serveur.
+						</p>
+						<div class="relative my-2 h-[182.08px] w-[400.41px] max-w-full">
+							<Image
+								src={Fleur}
+								alt=""
+								aria-hidden="true"
+								class="absolute h-auto w-full rotate-[-5deg] top-0 left-0 -translate-y-35"
+							/>
+						</div>
+						<p>
+							Enfin, en plus d’avoir une vision publicitaire, ce projet vise également à animer la communauté. En effet, celle-ci peut être amenée à participer en apparaissant directement dans les vidéos, en nous proposant des idées ou tout simplement en réagissant dans l’espace commentaires. Nous pouvons ainsi être amenés à en rediscuter par la suite.
+						</p>
+						<p>
+							Mon rôle est donc la création du contenu du compte, la création des descriptions des vidéos et tout simplement la gestion du compte. Je m’occupe également de la poursuite de l’identité graphique sur les réseaux sociaux avec le fond des slider en vert, rappelant les arbes, les forêt en rapport avec l’habitat naturel des deux écureils, mascotte de notre projet. Les polices d’écritures sont également fixes. Nous avons pour projet d’ajouter également des miniatures aux vidéos qui ne peuvent donc pas avoir ces éléments. Cela rendra plus joli lorsque nous tomberons sur la page du Tiktok.
+						</p>
+					</div>
+
+					<div class="mt-6 flex flex-wrap items-center justify-between gap-3">
+						<a
+							href="/realisation"
+							class="inline-flex h-[30px] w-fit items-center gap-1 rounded-[6px] border border-text1 bg-btn-debloquer pl-2 pr-1 font-oxanium text-btn leading-none text-text1"
+						>
+							Tous les projets <Badge aria-hidden="true" class="ml-1 shrink-0" />
+						</a>
+						<a
+							href="/404"
+							class="inline-flex h-[30px] w-fit items-center gap-1 rounded-[6px] border border-text1 bg-btn-debloquer pl-2 pr-1 font-oxanium text-btn leading-none text-text1"
+						>
+							Prochain <Badge aria-hidden="true" class="ml-1 shrink-0" />
+						</a>
+					</div>
+				</div>
+
+				<div class="flex flex-col gap-5">
+					<figure class="overflow-hidden">
+						<Image
+							src={Tiktokpromo}
+							alt="Page d’accueil du compte TikTok Hazel & Moka"
+							class="h-auto w-full"
+						/>
+					</figure>
+					<a href="https://www.tiktok.com/@hazel.moka3" target="_blank" rel="noopener noreferrer" class="link w-fit self-center font-platypi text-body">
+						Hazel & Moka
+					</a>
+
+					<div class="mt-2 text-right">
+						<h2 class="mb-1 font-pridi text-explication font-bold">Outils utilisés</h2>
+						<p class="font-platypi text-body">TikTok, Discord, Affinity, Canva, CapCut</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</Layout>
