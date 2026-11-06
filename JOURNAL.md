@@ -13,3 +13,6 @@ J'ai réalisé la page du profil, l'ia m'a aidé à faire et comprendre où plac
 # Semaine 4
 
 J'ai repéré une grosse erreur d'affichage sur ma page des crédits que j'ai tenté de réparer avec différentes ia pour comprendre le problèmes, que je n'avais visiblement pas vu la semaine dernière. J'ai également mis un effet 3D sur les card de l'index avec l alibraire Daisy UX. L'ia m'a expliqué et réglé le soucis qui faisait qu'avec les div vide mon bouton ne fonctionnait plus. La page 404 a également été mise en page et ajouté au projet. 
+
+# Semaine 5 
+J'ai réalisé l'insertion du contenu de ma page concernant le pojet de création de logo. Le fait que chaque page projet se ressemble et possède un sorte de template commun est plus simple et me facilite le code de ces pages. 
