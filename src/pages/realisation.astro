@@ -26,20 +26,20 @@ const projetsCommunication = [
 		<header class="text-center">
 			<h2 class="font-pragati-narrow text-h2 leading-tight">Un monde merveilleux</h2>
 			<p class="mt-2 font-platypi text-sous-intro leading-snug">
-				Des réalisations que vous pourriez faire, ayant été réalisé lors de quêtes
+				Des réalisations que j'ai produites, ayant été réalisées lors de quêtes
 			</p>
 		</header>
 
-		<section class="mt-[clamp(6rem,12vw,11rem)]">
+		<section class="mt-[clamp(3rem,6vw,6rem)]">
 			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
 				I. Communication
 			</h2>
-			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[80%] max-w-[1100px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
 				{projetsCommunication.map((projet) => (
-					<article class="relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
 						<svg
 							viewBox="0 0 349 337"
-							class="absolute inset-0 h-full w-full"
+							class="absolute inset-0 z-0 h-full w-full"
 							aria-hidden="true"
 						>
 							<path
@@ -48,18 +48,26 @@ const projetsCommunication = [
 								stroke="#9C8565"
 								stroke-width="3"
 							/>
-							<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
 						</svg>
-						<Image
-							src={FleurCarte}
-							alt=""
-							aria-hidden="true"
-							class="absolute left-[19%] top-[1%] h-[82%] w-[62%] object-contain"
-							style={`filter: ${projet.filtre}`}
-						/>
+						<div class="folder-flap absolute inset-0 z-10">
+							<svg
+								viewBox="0 0 349 337"
+								class="absolute inset-0 h-full w-full"
+								aria-hidden="true"
+							>
+								<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
+							</svg>
+							<Image
+								src={FleurCarte}
+								alt=""
+								aria-hidden="true"
+								class="absolute left-[19%] top-[3%] h-[88%] w-[62%] object-contain"
+								style={`filter: ${projet.filtre}`}
+							/>
+						</div>
 						<svg
 							viewBox="0 0 349 337"
-							class="absolute inset-0 h-full w-full"
+							class="absolute inset-0 z-20 h-full w-full"
 							aria-hidden="true"
 						>
 							<path
@@ -69,10 +77,10 @@ const projetsCommunication = [
 								stroke-width="3"
 							/>
 						</svg>
-						<p class="absolute left-[5%] top-[48%] font-pridi text-titre-card font-bold leading-none">
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
 							{projet.numero}
 						</p>
-						<p class="absolute left-[8%] top-[74%] font-platypi text-body leading-tight">
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
 							{projet.titre}
 						</p>
 					</article>
@@ -92,3 +100,20 @@ const projetsCommunication = [
 		</section>
 	</main>
 </Layout>
+
+<style>
+	.folder-flap {
+		transform-origin: 50% 100%;
+		transition: transform 300ms ease-out;
+	}
+
+	.group:hover .folder-flap {
+		transform: translateY(-12px);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.folder-flap {
+			transition: none;
+		}
+	}
+</style>
