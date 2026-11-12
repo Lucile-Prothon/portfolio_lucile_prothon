@@ -2,13 +2,39 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Boussoleloupe from "../assets/img/boussoleloupe.svg";
-import FleurCarte from "../assets/img/fleur-carte.png";
+import Fcom1 from "../assets/img/fcom1.svg";
+import Fcom2 from "../assets/img/fcom2.svg";	
+import Fcom3 from "../assets/img/fcom3.svg";
+import Fcom4 from "../assets/img/fcom4.svg";
+import Pdesing1 from "../assets/img/pdesign1.svg";
+import Pdesing2 from "../assets/img/pdesign2.svg";
+import Pdesing3 from "../assets/img/pdesign3.svg";
+import Sdev1 from "../assets/img/sdev1.svg";
+import Sdev2 from "../assets/img/sdev2.svg";
+import Sdev3 from "../assets/img/sdev3.svg";
+import Sdev4 from "../assets/img/sdev4.svg";
+import Sdev5 from "../assets/img/sdev5.svg";
 
 const projetsCommunication = [
-	{ numero: "01", titre: "Tiktok promotionnel", filtre: "none" },
-	{ numero: "02", titre: "Annonce discord", filtre: "hue-rotate(12deg)" },
-	{ numero: "03", titre: "Gestion de communauté", filtre: "hue-rotate(28deg)" },
-	{ numero: "04", titre: "Création fiche rp", filtre: "hue-rotate(-12deg) brightness(0.7)" },
+    { numero: "01", titre: "Tiktok promotionnel", image: Fcom1 },
+   /* { numero: "02", titre: "Annonce discord", image: Fcom2 },
+    { numero: "03", titre: "Gestion de communauté", image: Fcom3 },
+    { numero: "04", titre: "Création fiche rp", image: Fcom4 },*/
+];
+
+const projetsDesignn = [
+    { numero: "01", titre: "Création de logo", image: Pdesing1 },
+   /* { numero: "02", titre: "Création d'affiche", image: Pdesing2 },
+    { numero: "03", titre: "Montage vidéo", image: Pdesing3 },*/
+];
+
+const projetsDev = [
+    { numero: "01", titre: "Création de logo", image: Sdev1 },
+   /* { numero: "02", titre: "Les rives du territoire", image: Sdev2 },
+    { numero: "03", titre: "Hidden Voices", image: Sdev3 },
+	{ numero: "04", titre: "Olyvia", image: Sdev4 },
+	{ numero: "05", titre: "RPG (Vaultlight Community)", image: Sdev4 }
+	 { numero: "04", titre: "Visual novel (Hazel & Moka", image: Sdev5 },*/
 ];
 ---
 
@@ -58,11 +84,10 @@ const projetsCommunication = [
 								<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
 							</svg>
 							<Image
-								src={FleurCarte}
+								src={projet.image}
 								alt=""
 								aria-hidden="true"
-								class="absolute left-[19%] top-[3%] h-[88%] w-[62%] object-contain"
-								style={`filter: ${projet.filtre}`}
+								class="absolute left-[19%] top-[3%] h-[88%] w-[62%] object-cover"
 							/>
 						</div>
 						<svg
@@ -89,14 +114,112 @@ const projetsCommunication = [
 		</section>
 
 		<section class="mt-12">
-			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
-				II. Design graphique
-			</h2>
+			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">II. Design graphique</h2>
+			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+				{projetsDesignn.map((projet) => (
+					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 z-0 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M34 1.5h281c17.949 0 32.5 14.55 32.5 32.5v230.115c0 17.95-14.551 32.5-32.5 32.5H34c-17.95 0-32.5-14.55-32.5-32.5V34C1.5 16.05 16.05 1.5 34 1.5z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+						</svg>
+						<div class="folder-flap absolute inset-0 z-10">
+							<svg
+								viewBox="0 0 349 337"
+								class="absolute inset-0 h-full w-full"
+								aria-hidden="true"
+							>
+								<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
+							</svg>
+							<Image
+								src={projet.image}
+								alt=""
+								aria-hidden="true"
+								class="absolute left-[19%] top-[3%] h-[88%] w-[62%] object-cover"
+							/>
+						</div>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 z-20 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M21.223 152.91C9.833 153.046.646 163.842.586 177.158.432 212.184.146 276.765 0 310.266c-.051 11.859 8.081 21.553 18.223 21.72l300.928 4.985c8.162.136 17.559.073 23.149-6.88 5.591-6.951 6.863-20.154 6.245-29.671-1.929-29.679 1.668-69.404 0-95.067-.887-13.662-16.952-25.211-28.673-25.03-50.03.768-172.779 2.66-172.779 2.66-15.56-2.811-30.824-9.355-40.638-22.618-3.825-5.183-9.407-8.134-15.26-8.066-16.369-.022-48.713.36-69.972.611z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+						</svg>
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
+							{projet.numero}
+						</p>
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
+							{projet.titre}
+						</p>
+					</article>
+				))}
+			</div>
 		</section>
 		<section class="mt-12">
-			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
-				III. Développement web
-			</h2>
+			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">III. Développement web</h2>
+			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+				{projetsDev.map((projet) => (
+					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 z-0 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M34 1.5h281c17.949 0 32.5 14.55 32.5 32.5v230.115c0 17.95-14.551 32.5-32.5 32.5H34c-17.95 0-32.5-14.55-32.5-32.5V34C1.5 16.05 16.05 1.5 34 1.5z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+						</svg>
+						<div class="folder-flap absolute inset-0 z-10">
+							<svg
+								viewBox="0 0 349 337"
+								class="absolute inset-0 h-full w-full"
+								aria-hidden="true"
+							>
+								<path d="M18.95 22.683H330.05V315.128H18.95z" fill="#C9DBC4" />
+							</svg>
+							<Image
+								src={projet.image}
+								alt=""
+								aria-hidden="true"
+								class="absolute left-[19%] top-[3%] h-[88%] w-[62%] object-cover"
+							/>
+						</div>
+						<svg
+							viewBox="0 0 349 337"
+							class="absolute inset-0 z-20 h-full w-full"
+							aria-hidden="true"
+						>
+							<path
+								d="M21.223 152.91C9.833 153.046.646 163.842.586 177.158.432 212.184.146 276.765 0 310.266c-.051 11.859 8.081 21.553 18.223 21.72l300.928 4.985c8.162.136 17.559.073 23.149-6.88 5.591-6.951 6.863-20.154 6.245-29.671-1.929-29.679 1.668-69.404 0-95.067-.887-13.662-16.952-25.211-28.673-25.03-50.03.768-172.779 2.66-172.779 2.66-15.56-2.811-30.824-9.355-40.638-22.618-3.825-5.183-9.407-8.134-15.26-8.066-16.369-.022-48.713.36-69.972.611z"
+								fill="#D3A46A"
+								stroke="#9C8565"
+								stroke-width="3"
+							/>
+						</svg>
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
+							{projet.numero}
+						</p>
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
+							{projet.titre}
+						</p>
+					</article>
+				))}
+			</div>
 		</section>
 	</main>
 </Layout>
