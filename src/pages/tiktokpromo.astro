@@ -6,7 +6,7 @@ import Badge from "../assets/icons/badge.svg";
 import Tiktokpromo from "../assets/img/tiktokpromo.webp";
 ---
 
-<Layout>
+<Layout title="TikTok promotionnel | Portfolio de Lucile Prothon">
 	<div class="bg-header px-6 py-8 text-text1 sm:px-10 lg:px-16">
 		<div class="mx-auto max-w-7xl">
 			<h1 class="font-teko text-h1 leading-none">Tiktok promotionnel</h1>
@@ -25,7 +25,7 @@ import Tiktokpromo from "../assets/img/tiktokpromo.webp";
 			</div>
 
 			<section class="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
-				<div class="flex flex-col">
+				<div class="order-2 flex min-w-0 flex-col lg:order-1">
 					<h2 class="mb-4 font-pridi text-explication font-bold">Explication</h2>
 					<div class="space-y-4 font-platypi text-body leading-relaxed">
 						<p>
@@ -37,12 +37,12 @@ import Tiktokpromo from "../assets/img/tiktokpromo.webp";
 						<p>
 							J’utilise donc Canva lorsqu’il s’agit de créer des slides, ou encore CapCut ou DaVinci Resolve lorsqu’il s’agit de montage vidéo pur. Nous essayons d’avoir au moins un post par semaine. Suite à une étude réalisée en ligne, mais également à nos propres constatations, nous publions généralement durant la pause du midi. Le but de ce projet est bien évidemment de prendre un premier contact avec les réseaux sociaux, ou du moins de le renforcer. Avec ce compte TikTok, nous voulons également attirer de nouveaux utilisateurs afin qu’ils rejoignent notre offre : notre serveur.
 						</p>
-						<div class="relative my-2 h-[182.08px] w-[400.41px] max-w-full">
+						<div class="my-2 flex min-h-[112px] w-full items-center justify-center sm:min-h-[160px]">
 							<Image
 								src={Fleur}
 								alt=""
 								aria-hidden="true"
-								class="absolute h-auto w-full rotate-[-5deg] top-0 left-0 -translate-y-35"
+								class="h-auto w-[80%] max-w-[300px] rotate-[-5deg]"
 							/>
 						</div>
 						<p>
@@ -69,12 +69,12 @@ import Tiktokpromo from "../assets/img/tiktokpromo.webp";
 					</div>
 				</div>
 
-				<div class="flex flex-col gap-5">
+				<div class="order-1 flex min-w-0 flex-col gap-5 lg:order-2">
 					<figure class="overflow-hidden">
 						<Image
 							src={Tiktokpromo}
 							alt="Page d’accueil du compte TikTok Hazel & Moka"
-							class="h-auto w-full"
+							class="mx-auto h-auto w-full max-w-[450px]"
 						/>
 					</figure>
 					<a href="https://www.tiktok.com/@hazel.moka3" target="_blank" rel="noopener noreferrer" class="link w-fit self-center font-platypi text-body">

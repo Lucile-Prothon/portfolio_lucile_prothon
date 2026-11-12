@@ -16,20 +16,20 @@ import Sdev4 from "../assets/img/sdev4.svg";
 import Sdev5 from "../assets/img/sdev5.svg";
 
 const projetsCommunication = [
-    { numero: "01", titre: "Tiktok promotionnel", image: Fcom1 },
+    { numero: "01", titre: "Tiktok promotionnel", image: Fcom1, lien: "/tiktokpromo" },
    /* { numero: "02", titre: "Annonce discord", image: Fcom2 },
     { numero: "03", titre: "Gestion de communauté", image: Fcom3 },
     { numero: "04", titre: "Création fiche rp", image: Fcom4 },*/
 ];
 
 const projetsDesignn = [
-    { numero: "01", titre: "Création de logo", image: Pdesing1 },
+    { numero: "01", titre: "Création de logo", image: Pdesing1, lien: "/crealogo" },
    /* { numero: "02", titre: "Création d'affiche", image: Pdesing2 },
     { numero: "03", titre: "Montage vidéo", image: Pdesing3 },*/
 ];
 
 const projetsDev = [
-    { numero: "01", titre: "Création de logo", image: Sdev1 },
+    { numero: "01", titre: "Création de logo", image: Sdev1, lien: "/riveterritoire" },
    /* { numero: "02", titre: "Les rives du territoire", image: Sdev2 },
     { numero: "03", titre: "Hidden Voices", image: Sdev3 },
 	{ numero: "04", titre: "Olyvia", image: Sdev4 },
@@ -38,17 +38,17 @@ const projetsDev = [
 ];
 ---
 
-<Layout>
-	<div class="relative flex min-h-[clamp(250px,40vh,390px)] items-center bg-header px-4 text-text1">
+<Layout title="Réalisations | Portfolio de Lucile Prothon">
+	<div class="relative flex min-h-[220px] items-center bg-header px-4 text-text1 sm:min-h-[clamp(250px,40vh,390px)]">
 		<h1 class="absolute right-3 left-2 text-center font-teko text-h1 leading-tight">Réalisation</h1>
 		<Image
 			src={Boussoleloupe}
 			alt="Illustration d'une boussole et d'une loupe"
-			class="absolute right-[7%] top-1/2 h-auto w-[clamp(120px,20vw,240px)] -translate-y-1/2"
+			class="absolute right-[3%] top-1/2 h-auto w-[clamp(92px,20vw,250px)] -translate-y-1/2"
 		/>
 	</div>
 
-	<main class="bg-background px-6 pb-12 pt-[clamp(4rem,8vw,7.5rem)] text-text1">
+	<main class="bg-background px-4 pb-12 pt-8 text-text1 sm:px-6 sm:pt-[clamp(3rem,8vw,7.5rem)]">
 		<header class="text-center">
 			<h2 class="font-pragati-narrow text-h2 leading-tight">Un monde merveilleux</h2>
 			<p class="mt-2 font-platypi text-sous-intro leading-snug">
@@ -56,13 +56,13 @@ const projetsDev = [
 			</p>
 		</header>
 
-		<section class="mt-[clamp(3rem,6vw,6rem)]">
+		<section id="communication" class="scroll-mt-6 mt-[clamp(3rem,6vw,6rem)]">
 			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">
 				I. Communication
 			</h2>
-			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+			<div class="mx-auto mt-8 grid w-full max-w-[800px] grid-cols-[93px] justify-center gap-x-6 gap-y-8 sm:mt-[clamp(2rem,7vw,6.5rem)] sm:grid-cols-2 sm:justify-normal lg:grid-cols-3">
 				{projetsCommunication.map((projet) => (
-					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+					<a href={projet.lien} class="group relative block h-[90px] w-[93px] aspect-auto text-text1 no-underline focus-visible:outline-2 focus-visible:outline-offset-2 sm:h-auto sm:w-auto sm:aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
 						<svg
 							viewBox="0 0 349 337"
 							class="absolute inset-0 z-0 h-full w-full"
@@ -102,22 +102,22 @@ const projetsDev = [
 								stroke-width="3"
 							/>
 						</svg>
-						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-[10px] font-bold leading-none sm:text-titre-card">
 							{projet.numero}
 						</p>
-						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-[7px] leading-tight sm:text-body">
 							{projet.titre}
 						</p>
-					</article>
+					</a>
 				))}
 			</div>
 		</section>
 
-		<section class="mt-12">
+		<section id="design-graphique" class="scroll-mt-6 mt-12">
 			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">II. Design graphique</h2>
-			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+			<div class="mx-auto mt-[clamp(2rem,7vw,6.5rem)] grid w-full max-w-[800px] grid-cols-[93px] justify-center gap-x-6 gap-y-8 sm:grid-cols-2 sm:justify-normal lg:grid-cols-3">
 				{projetsDesignn.map((projet) => (
-					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+					<a href={projet.lien} class="group relative block h-[90px] w-[93px] aspect-auto text-text1 no-underline focus-visible:outline-2 focus-visible:outline-offset-2 sm:h-auto sm:w-auto sm:aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
 						<svg
 							viewBox="0 0 349 337"
 							class="absolute inset-0 z-0 h-full w-full"
@@ -157,21 +157,21 @@ const projetsDev = [
 								stroke-width="3"
 							/>
 						</svg>
-						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-[10px] font-bold leading-none sm:text-titre-card">
 							{projet.numero}
 						</p>
-						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-[7px] leading-tight sm:text-body">
 							{projet.titre}
 						</p>
-					</article>
+					</a>
 				))}
 			</div>
 		</section>
-		<section class="mt-12">
+		<section id="developpement-web" class="scroll-mt-6 mt-12">
 			<h2 class="text-center font-cinzel-decorative text-titre font-bold uppercase leading-tight text-text3">III. Développement web</h2>
-			<div class="mx-auto mt-[clamp(3rem,7vw,6.5rem)] grid w-[70%] max-w-[800px] grid-cols-3 gap-x-[2.5%] gap-y-8">
+			<div class="mx-auto mt-[clamp(2rem,7vw,6.5rem)] grid w-full max-w-[800px] grid-cols-[93px] justify-center gap-x-6 gap-y-8 sm:grid-cols-2 sm:justify-normal lg:grid-cols-3">
 				{projetsDev.map((projet) => (
-					<article class="group relative aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
+					<a href={projet.lien} class="group relative block h-[90px] w-[93px] aspect-auto text-text1 no-underline focus-visible:outline-2 focus-visible:outline-offset-2 sm:h-auto sm:w-auto sm:aspect-[349/337]" aria-label={`${projet.numero} ${projet.titre}`}>
 						<svg
 							viewBox="0 0 349 337"
 							class="absolute inset-0 z-0 h-full w-full"
@@ -211,13 +211,13 @@ const projetsDev = [
 								stroke-width="3"
 							/>
 						</svg>
-						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-titre-card font-bold leading-none">
+						<p class="absolute left-[5%] top-[48%] z-30 font-pridi text-[10px] font-bold leading-none sm:text-titre-card">
 							{projet.numero}
 						</p>
-						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-body leading-tight">
+						<p class="absolute left-[8%] top-[74%] z-30 font-platypi text-[7px] leading-tight sm:text-body">
 							{projet.titre}
 						</p>
-					</article>
+					</a>
 				))}
 			</div>
 		</section>

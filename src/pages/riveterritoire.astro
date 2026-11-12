@@ -6,7 +6,7 @@ import Badge from "../assets/icons/badge.svg";
 import Riveterritoire from "../assets/img/lesrivesduterritoires.webp";
 ---
 
-<Layout>
+<Layout title="Les Rives du territoire | Portfolio de Lucile Prothon">
 	<div class="bg-header px-6 py-8 text-text1 sm:px-10 lg:px-16">
 		<div class="mx-auto max-w-7xl">
 			<h1 class="font-teko text-h1 leading-none">Les rives du territoire</h1>
@@ -25,7 +25,7 @@ import Riveterritoire from "../assets/img/lesrivesduterritoires.webp";
 			</div>
 
 			<section class="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
-				<div class="flex flex-col">
+				<div class="order-2 flex min-w-0 flex-col lg:order-1">
 					<h2 class="mb-4 font-pridi text-explication font-bold">Explication</h2>
 					<div class="space-y-4 font-platypi text-body leading-relaxed">
 						<p>
@@ -37,12 +37,12 @@ import Riveterritoire from "../assets/img/lesrivesduterritoires.webp";
 						<p>
 							Nous avions trois jours afin de le réaliser, à la demande de nos professeurs. C’est l’un des sites que j’ai, à mon sens, le mieux réussi en termes de code. Comparé à d’autres projets, je trouve que celui-ci ne contient que peu d’erreurs et est d’ailleurs, dans un certain sens, responsive, bien que certaines images des héros puissent être un peu trop grandes.
 						</p>
-						<div class="relative my-2 h-[182.08px] w-[400.41px] max-w-full">
+						<div class="my-2 flex min-h-[112px] w-full items-center justify-center sm:min-h-[160px]">
 							<Image
 								src={Scarabe}
 								alt="Image d'un scarabé"
 								aria-hidden="true"
-								class="absolute h-auto w-[80%] top-0 left-10 -translate-y-12"
+								class="h-auto w-[70%] max-w-[300px]"
 							/>
 						</div>
 						<p>
@@ -69,12 +69,12 @@ import Riveterritoire from "../assets/img/lesrivesduterritoires.webp";
 					</div>
 				</div>
 
-				<div class="flex flex-col gap-5">
+				<div class="order-1 flex min-w-0 flex-col gap-5 lg:order-2">
 					<figure class="overflow-hidden">
 						<Image
 							src={Riveterritoire}
 							alt="Page d’accueil du compte TikTok Hazel & Moka"
-							class="h-auto w-[40%] ml-40"
+							class="mx-auto h-auto w-full max-w-[390px] object-contain lg:max-w-[450px]"
 						/>
 					</figure>
 					<a href="https://les-rives-du-territoire.prothon.fr/" target="_blank" rel="noopener noreferrer" class="link w-fit self-center font-platypi text-body">

@@ -16,3 +16,6 @@ J'ai repéré une grosse erreur d'affichage sur ma page des crédits que j'ai te
 
 # Semaine 5 
 J'ai réalisé l'insertion du contenu de ma page concernant le pojet de création de logo. Le fait que chaque page projet se ressemble et possède un sorte de template commun est plus simple et me facilite le code de ces pages. 
+
+# Semaine 6
+J'ai terminé la page des réalisation que j'ai adapté pour mes trois parties avec l'ia et pour que chaques images soient différentes, comme sur le modèle Figma. L'ia m'a également fait le responsive de mon site. J'ai d'ailleurs décidé de mettre en commentaire tous les projets que je présente n'ayant pas encore été développé avec un texte, je trouve cela plus cohérent que de faire un simple renvoi vers la page 404 ou ne rein faire du tout. 

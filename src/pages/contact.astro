@@ -4,24 +4,24 @@ import {Image} from "astro:assets";
 import Livre from "../assets/img/livre.svg";
 ---
 
-<Layout>
-    <div class="bg-background px-6 pb-12 pt-14 text-center">
+<Layout title="Contact | Portfolio de Lucile Prothon">
+    <div class="bg-background px-6 pb-8 pt-8 text-center sm:pb-12 sm:pt-14">
         <h1 class="text-h2 font-pragati-narrow text-text1 leading-tight">Entrez en profondeur...</h1>
         <p class="text-sous-intro text-text1 leading-snug">Une envie, un projet ? Ecrivez moi afin d’en dicuter !</p>
     </div>
     <section class="bg-background px-4 pb-12 sm:px-6">
-        <div class="relative mx-auto grid w-full max-w-[1000px] grid-cols-1 gap-8 rounded-lg bg-btn-debloquer p-8 sm:grid-cols-2 md:aspect-[1343/847] md:gap-0 md:rounded-none md:bg-transparent md:p-0">
+        <div class="contact-frame relative mx-auto grid aspect-[1.55] w-full max-w-[1000px] grid-cols-2 gap-0 md:aspect-[1343/847]">
             <Image
                 src={Livre}
                 alt="Livre ouvert servant de support à la page de contact"
-                class="absolute inset-0 hidden h-full w-full object-fill md:block"
+                class="absolute inset-0 h-full w-full object-fill"
             />
-            <div class="z-10 flex flex-col items-center justify-between text-center sm:col-span-1">
-                <h2 class="font-pridi text-gros font-bold text-text1 mt-15">CONTACT</h2>
-                <p class="-translate-y-4 font-pridi text-formulaire font-bold text-text1 mb-25">XX - XX - XXX</p>
+            <div class="contact-info z-10 col-start-1 row-start-1 flex flex-col items-center justify-between text-center">
+                <h2 class="mt-[10%] font-pridi text-gros font-bold text-text1 sm:mt-15">CONTACT</h2>
+                <p class="mb-[8%] -translate-y-1 font-pridi text-formulaire font-bold text-text1 sm:mb-25 sm:-translate-y-4">XX - XX - XXX</p>
             </div>
             <form
-                class="z-10 flex flex-col gap-2 font-pridi text-formulaire text-text1 sm:col-span-1 md:absolute md:left-[59%] md:top-[12%] md:w-[31%]"
+                class="contact-form absolute left-[59%] top-[12%] z-10 flex w-[31%] flex-col gap-2 font-pridi text-formulaire text-text1"
                 action="mailto:lucileprothon@gmail.com?subject=Contact%20depuis%20le%20portfolio"
                 method="post"
                 enctype="text/plain"
@@ -59,3 +59,37 @@ import Livre from "../assets/img/livre.svg";
         </div>
     </section>
 </Layout>
+
+<style>
+    @media (max-width: 639px) {
+        .contact-form {
+            gap: 0.15rem;
+            font-size: clamp(0.625rem, 2.8vw, 0.875rem);
+            line-height: 1.15;
+        }
+
+        .contact-form input {
+            height: clamp(1.25rem, 6vw, 1.75rem);
+            border-width: 2px;
+            padding-inline: 0.25rem;
+        }
+
+        .contact-form textarea {
+            height: clamp(2.5rem, 15vw, 4rem);
+            min-height: 0;
+            border-width: 2px;
+            padding: 0.25rem;
+        }
+
+        .contact-form label {
+            margin-top: 0.15rem;
+        }
+
+        .contact-form button {
+            margin-top: 0.2rem;
+            border-width: 2px;
+            padding-inline: 0.25rem;
+            font-size: clamp(0.625rem, 2.8vw, 0.875rem);
+        }
+    }
+</style>

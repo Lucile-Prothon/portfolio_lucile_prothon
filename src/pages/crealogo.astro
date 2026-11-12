@@ -7,7 +7,7 @@ import Logo1 from "../assets/img/logo1.svg";
 import Logo2 from "../assets/img/logo2.svg";
 ---
 
-<Layout>
+<Layout title="Création de logo | Portfolio de Lucile Prothon">
 	<div class="bg-header px-6 py-8 text-text1 sm:px-10 lg:px-16">
 		<div class="mx-auto max-w-7xl">
 			<h1 class="font-teko text-h1 leading-none">Création de logo</h1>
@@ -26,7 +26,7 @@ import Logo2 from "../assets/img/logo2.svg";
 			</div>
 
 			<section class="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-16">
-				<div class="flex flex-col">
+				<div class="order-2 flex min-w-0 flex-col lg:order-1">
 					<h2 class="mb-4 font-pridi text-explication font-bold">Explication</h2>
 					<div class="space-y-4 font-platypi text-body leading-relaxed">
 						<p>
@@ -38,12 +38,12 @@ import Logo2 from "../assets/img/logo2.svg";
 						<p>
 							Un groupe doit être facilement et rapidement reconnaissable. J’ai donc eu l’idée de leur créer des symboles permettant de les identifier, sortes de logos. J’ai alors cherché des inspirations sur Pinterest en rapport avec ce que j’avais précédemment écrit sur leur fonctionnement, en y associant les idées de mon ami. Je me suis ensuite mis sur Affinity afin de reproduire au mieux nos idées.
                         </p>
-						<div class="relative my-2 h-[182.08px] w-[400.41px] max-w-full">
+						<div class="my-2 flex min-h-[112px] w-full items-center justify-center sm:min-h-[160px]">
 							<Image
 								src={Papillon}
 								alt=""
 								aria-hidden="true"
-								class="absolute h-auto w-[60%] rotate-[-5deg] top-0 left-20 -translate-y-5"
+								class="h-auto w-[60%] max-w-[240px] rotate-[-5deg]"
 							/>
 						</div>
 						<p>
@@ -71,13 +71,13 @@ Le chapeau ainsi que le monocle rappellent la noblesse, parfaits pour décrire l
 					</div>
 				</div>
 
-				<div class="flex flex-col gap-5">
-					<div class="grid grid-cols-2 gap-4">
+				<div class="order-1 flex min-w-0 flex-col gap-5 lg:order-2">
+					<div class="grid grid-cols-2 gap-2 sm:gap-4">
 						<figure class="min-w-0 overflow-hidden">
 							<Image
 								src={Logo1}
 								alt="Logo de la faction des Anarchistes"
-								class="h-auto w-full"
+								class="mx-auto h-auto w-full max-w-[230px]"
 							/>
 							<figcaption class="text-center">Les anarchistes</figcaption>
 						</figure>
@@ -85,7 +85,7 @@ Le chapeau ainsi que le monocle rappellent la noblesse, parfaits pour décrire l
 							<Image
 								src={Logo2}
 								alt="Logo de la faction du Baron"
-								class="h-auto w-full"
+								class="mx-auto h-auto w-full max-w-[230px]"
 							/>
 							<figcaption class="text-center">Le Baron</figcaption>
 						</figure>
