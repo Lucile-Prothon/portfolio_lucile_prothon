@@ -7,7 +7,7 @@ import Cailloupapillon from "../assets/img/cailloupapillon.svg";
 
 ---
 
-<footer class="grid grid-cols-[auto_minmax(0,1fr)_auto] items-end gap-x-3 gap-y-4 bg-header p-4 md:grid-cols-[minmax(0,1fr)_auto_auto_minmax(0,1fr)] md:gap-x-8 md:px-4 md:py-0 md:pl-12">
+<footer class="grid grid-cols-[auto_minmax(0,1fr)_auto] items-end gap-x-3 gap-y-4 bg-header px-4 pt-4 pb-1 md:grid-cols-[minmax(0,1fr)_auto_auto_minmax(0,1fr)] md:gap-x-8 md:px-4 md:py-0 md:pl-12">
 <div class="col-span-3 mb-2 flex flex-col items-start gap-y-2 md:col-span-1 md:mb-4 md:ml-4 md:mt-4 md:gap-y-4 md:pt-7">
 <p class="text-text1 font-teko text-contact-footer">Contact</p>
 <a
@@ -22,18 +22,22 @@ import Cailloupapillon from "../assets/img/cailloupapillon.svg";
   aria-label="Voir mon profil LinkedIn"><Linkedin class="h-10 w-10 text-black" />
 </a>
 </div>
-<div class="col-start-2 row-start-2 mb-1 flex items-end justify-self-center gap-x-4 md:col-start-3 md:justify-self-start md:gap-x-10">
+<div class="col-start-2 row-start-3 mb-1 flex items-end justify-self-center md:col-start-3 md:row-start-2 md:row-span-2 md:justify-self-start md:gap-x-10 -translate-y-15 md:translate-x-50 translate-x-10">
 <nav class="text-text1 font-pragati-narrow text-formulaire">
-    <ul>
-        <li><a href="/profil">Profil</a></li>
-        <li><a href="/realisation">Réalisation</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/credit">Crédit</a></li>
-    </ul>
+<ul class="flex flex-col gap-1">
+<li><a href="/profil">Profil</a></li>
+<li><a href="/realisation">Réalisation</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/credit">Crédit</a></li>
+</ul>
 </nav>
 </div>
 <Image 
     src={Cailloupapillon} 
     alt="Illustration d'un caillou et d'un papillon"
-    class="col-start-3 row-start-2 h-auto w-[clamp(90px,24vw,145px)] max-w-full object-contain md:col-start-4 md:row-span-2 md:h-[210px] md:w-auto md:max-w-none" />
+    class="col-start-3 row-start-2 row-span-2
+           h-auto w-[clamp(100px,35vw,150px)]
+           max-w-full object-contain
+           justify-self-end self-end md:col-start-4 md:row-start-1 md:row-span-3 md:h-[210px] md:w-auto md:max-w-none" 
+/>
 </footer>
